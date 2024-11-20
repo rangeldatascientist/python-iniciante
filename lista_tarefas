@@ -1,0 +1,21 @@
+tarefas = []  # Lista vazia
+
+while True:
+    print("\n1. Adicionar tarefa")
+    print("2. Ver tarefas")
+    print("3. Sair")
+    opcao = input("Escolha uma opção: ")
+
+    if opcao == "1":
+        tarefa = input("Digite a tarefa: ")
+        tarefas.append(tarefa)
+        print("Tarefa adicionada!")
+    elif opcao == "2":
+        print("Suas tarefas:")
+        for t in tarefas:
+            print(f"- {t}")
+    elif opcao == "3":
+        print("Mantenha suas tarefas e atividades organziada!")
+        break
+    else:
+        print("Opção inválida. Tente novamente.")
